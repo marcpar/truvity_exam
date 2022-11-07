@@ -27,7 +27,16 @@ https://google.com 14832
 
 ## diagram 
 
-![truvity](digram_truvity.jpg)
+![truvity](diagram_truvity.jpg)
+
+Explanation:
+    if its in the AWS architecture, we will need EKS cluster to create the resources needed
+    - there are 2 option host the SPA in s3 with cloudfront or as a deployment in kubernetes 
+    - backend api will be in kubernetes deployment with 2 containers as init container for SQL script  then the main container
+    - job container to load binary fixture 
+    - for postgres we have 2 option 1 for rds cluster or the statefulset inside kubernetes
+    - external data provider(????) if the api backend will query this ?
+    
 
 
 ## Contributing
